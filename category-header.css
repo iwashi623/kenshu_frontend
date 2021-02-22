@@ -19,10 +19,7 @@
 }
 
 .category-list-item {
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #294C7A;
     margin-right: 20px;
     white-space: nowrap;
@@ -32,10 +29,8 @@
 .sogo {
     width: 27px;
     height: 12px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 160%;
     color: #294C7A;
 }
