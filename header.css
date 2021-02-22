@@ -10,7 +10,9 @@
     clear: both;
 }
 
-
+html {
+    font-size: 10px;
+}
 
 /* header */
 header {
@@ -51,10 +53,7 @@ header {
     width: 335px;
     height: 30px;
     margin-left: 18px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 18px;
     display: flex;
     align-items: center;
@@ -81,35 +80,11 @@ header {
 }
 
 
-.media {
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
+.release-list-font {
+    font-size: 1.3rem;
     color: #FFFFFF;
-    white-space: nowrap;
 }
 
-.company {
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-    white-space: nowrap;
-}
-
-.login {
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
-    color: #FFFFFF;
-    white-space: nowrap;
-}
 
 .line {
     width: 1px;
@@ -136,10 +111,7 @@ header {
     padding: 2px 15px;
     width: 228px;
     height: 25px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 19px;
     display: flex;
     align-items: center;
@@ -173,21 +145,14 @@ header {
 }
 
 
-
 .list-press-release {
     margin-left: -1px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #FFFFFF;
 }
 
 .list-ranking {
- 
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 19px;
     display: flex;
@@ -195,17 +160,12 @@ header {
     color: #BFC9D7;
 }
 
-.list-tv {
-  
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
+.list-tv {  
     font-size: 13px;
     line-height: 19px;
     display: flex;
     align-items: center;
     color: #BFC9D7;
-
 }
 
 
