@@ -55,7 +55,6 @@ header {
     height: 30px;
     margin-left: 18px;
     font-size: 1.2rem;
-    line-height: 18px;
     display: flex;
     align-items: center;
     color: #BFC9D7;
@@ -112,7 +111,6 @@ header {
     width: 228px;
     height: 25px;
     font-size: 1.3rem;
-    line-height: 19px;
     display: flex;
     align-items: center;
     color: #BBBBBB;
@@ -153,7 +151,6 @@ header {
 
 .list-ranking {
     font-size: 13px;
-    line-height: 19px;
     display: flex;
     align-items: center;
     color: #BFC9D7;
@@ -161,7 +158,6 @@ header {
 
 .list-tv {  
     font-size: 13px;
-    line-height: 19px;
     display: flex;
     align-items: center;
     color: #BFC9D7;
