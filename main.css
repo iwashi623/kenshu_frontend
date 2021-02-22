@@ -49,11 +49,9 @@
 }
 
 .main-article-title {
-    font-family: Hiragino Kaku Gothic ProN;
     text-align: left;
-    font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 160%;
     color: #3B3B3B;
 }
@@ -93,10 +91,7 @@
     display: inline-block;
     width: 32px;
     height: 15px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 100%;
     color: #A2A2A2;
 }
@@ -106,10 +101,7 @@
     display: inline-block;
     width: 144px;
     height: 15px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 100%;
     color: #A2A2A2;
 }
@@ -121,10 +113,8 @@
     background: #3081C9;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
     border-radius: 2px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #FFFFFF;
     border: none;
 }
@@ -141,10 +131,8 @@
 }
 
 .side-title {
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 27px;
     color: #3B3B3B;
     padding-bottom: 43px;
@@ -161,10 +149,7 @@
     background: #F1F1F1;
     border-radius: 11px;
     height: 22px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 180%;
     color: #3B3B3B;
     text-align: center;
