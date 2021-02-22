@@ -6,7 +6,6 @@
 .categories {
     margin: 0 auto;
     width: 837px;
-    text-align: center;
 }
 
 .categories ul {
@@ -24,6 +23,7 @@
     margin-right: 20px;
     white-space: nowrap;
     padding-top: 11.5px;
+    line-height: 100%;
 }
 
 .sogo {
@@ -31,7 +31,6 @@
     height: 12px;
     font-weight: bold;
     font-size: 1.3rem;
-    line-height: 160%;
     color: #294C7A;
 }
 
