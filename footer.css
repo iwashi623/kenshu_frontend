@@ -26,9 +26,6 @@ footer {
     display: flex;
 }
 
-.list-style {
-    list-style: none;
-}
 
 .news-list {
     width: 281px;
