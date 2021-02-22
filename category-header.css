@@ -1,0 +1,97 @@
+/* .category-header */
+.category-header {
+    height: 36px;
+}
+
+.categories {
+    margin: 0 auto;
+    width: 837px;
+    text-align: center;
+}
+
+.categories ul {
+    width: 837px;
+    height: 13px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-list-item {
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: #294C7A;
+    margin-right: 20px;
+    white-space: nowrap;
+    padding-top: 11.5px;
+}
+
+.sogo {
+    width: 27px;
+    height: 12px;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 160%;
+    color: #294C7A;
+}
+
+.technology {
+    width: 77px;
+    height: 13px;
+}
+
+.mobile {
+    width: 51px;
+    height: 13px;
+}
+
+.apli {
+    width: 40px;
+    height: 12px;
+}
+
+.entame {
+    width: 52px;
+    height: 13px;
+}
+
+.beauty {
+    width: 78px;
+    height: 13px;
+    left: 347px;
+    top: 1px;
+}
+
+.fassion {
+    width: 79px;
+    height: 12px;
+}
+
+.lifestyle {
+    width: 91px;
+    height: 13px;
+}
+
+.buisness {
+    width: 53px;
+    height: 12px;
+    left: 655px;
+    top: 1px;
+}
+
+.gurume {
+    width: 38px;
+    height: 13px;
+    left: 728px;
+    top: 1px;
+}
+
+.sports {
+    width: 52px;
+    height: 13px;
+}

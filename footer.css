@@ -1,0 +1,132 @@
+/* footer */
+footer {
+    width: 100%;
+    height: 356px;
+    background: #FAFAFA;;
+}
+
+.footer-container {
+    position: relative;
+    margin: 0 auto;
+    width: 1127px;
+    height: 296px;
+    
+}
+
+.footer-contents {
+    position: absolute;
+    top: 60px;
+    height: 296px;
+    width: 100%;
+}
+
+.footer-lists {
+    width: 1125px;
+    height: 230px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+}
+
+.list-style {
+    list-style: none;
+}
+
+.news-list {
+    width: 281px;
+    height: 210px;
+}
+
+.news-list-item {
+    height: 13px;
+    margin-bottom: 18px;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #797979;
+}
+
+.news-list-item:nth-child(1) {
+    color: #000000;
+}
+
+.recommed-list {
+    height: 210px;
+    width: 540px;
+    display: flex;
+}
+
+.recommed-list-1 {
+    width: 259px;
+}
+
+.recommend-list-item {
+    height: 13px;
+    margin-bottom: 18px;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #797979;
+}
+
+.recommend-list-item:nth-child(1) {
+    color: #000000;
+}
+
+
+.sns-list {
+    height: 210px;
+    width: 281px;
+}
+
+.sns-list-item {
+    height: 13px;
+    margin-bottom: 18px;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 100%;
+    color: #797979;
+}
+
+.sns-list-item:nth-child(1) {
+    color: #000000;
+}
+
+
+.footer-term {
+    width: 1125px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-term-item {
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #797979;
+    margin-right: 20px;
+}
+
+.footer-copyright {
+    width: 1125px;
+    height: 20px;
+}
+
+.footer-copyright-item {
+    display: inline;
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    color: #797979;
+    vertical-align: top;
+}
+
