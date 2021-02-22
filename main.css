@@ -1,13 +1,13 @@
 /* main */
 
-.main-area {
+.wrapper {
     margin: 40.65px auto 0 auto;
     width: 1127px;
     height: 803.35px;
     display: flex;
 }
 
-.contents {
+.main-area {
     width: 779px;
     height: 733.35px;
 }
@@ -22,7 +22,7 @@
     color: #3B3B3B;
 }
 
-.wrapper {
+.contents {
     width: 778px;
     height: 658px;
     text-align: center;
