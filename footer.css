@@ -37,12 +37,9 @@ footer {
     height: 210px;
 }
 
-.news-list-item {
-    height: 13px;
+.footer-list-item {
+    height: 1.3rem;
     margin-bottom: 18px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     line-height: 100%;
     color: #797979;
@@ -62,17 +59,6 @@ footer {
     width: 259px;
 }
 
-.recommend-list-item {
-    height: 13px;
-    margin-bottom: 18px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-    color: #797979;
-}
-
 .recommend-list-item:nth-child(1) {
     color: #000000;
 }
@@ -83,21 +69,9 @@ footer {
     width: 281px;
 }
 
-.sns-list-item {
-    height: 13px;
-    margin-bottom: 18px;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 100%;
-    color: #797979;
-}
-
 .sns-list-item:nth-child(1) {
     color: #000000;
 }
-
 
 .footer-term {
     width: 1125px;
@@ -107,9 +81,6 @@ footer {
 }
 
 .footer-term-item {
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
     font-size: 12px;
     color: #797979;
     margin-right: 20px;
@@ -122,10 +93,7 @@ footer {
 
 .footer-copyright-item {
     display: inline;
-    font-family: Hiragino Kaku Gothic ProN;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
+    font-size: 1.1rem;
     color: #797979;
     vertical-align: top;
 }
