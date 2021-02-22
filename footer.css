@@ -6,7 +6,7 @@ footer {
 }
 
 .footer-container {
-    position: relative;
+    padding-top: 60px;
     margin: 0 auto;
     width: 1127px;
     height: 296px;
@@ -14,8 +14,6 @@ footer {
 }
 
 .footer-contents {
-    position: absolute;
-    top: 60px;
     height: 296px;
     width: 100%;
 }
