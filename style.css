@@ -156,20 +156,18 @@ header {
 .categories {
   margin: 0 auto;
   width: 837px;
+  padding-top: 13px;
 }
 
-.categories ul {
+.category-list {
   width: 837px;
   height: 13px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .category-list-item {
   margin-right: 20px;
   white-space: nowrap;
-  padding-top: 11.5px;
   line-height: 1;
 }
 
@@ -179,62 +177,11 @@ header {
 }
 
 .sogo {
-  width: 27px;
-  height: 12px;
   font-weight: bold;
   font-size: 1.3rem;
   color: #294c7a;
 }
 
-.technology {
-  width: 77px;
-  height: 13px;
-}
-
-.mobile {
-  width: 51px;
-  height: 13px;
-}
-
-.apli {
-  width: 40px;
-  height: 12px;
-}
-
-.entame {
-  width: 52px;
-  height: 13px;
-}
-
-.beauty {
-  width: 78px;
-  height: 13px;
-}
-
-.fassion {
-  width: 79px;
-  height: 12px;
-}
-
-.lifestyle {
-  width: 91px;
-  height: 13px;
-}
-
-.buisness {
-  width: 53px;
-  height: 12px;
-}
-
-.gurume {
-  width: 38px;
-  height: 13px;
-}
-
-.sports {
-  width: 52px;
-  height: 13px;
-}
 
 /* .ranking */
 .ranking {
@@ -585,10 +532,10 @@ footer {
 }
 
 .list-title {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-bottom: 18px;
-    line-height: 1;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 18px;
+  line-height: 1;
 }
 
 .footer-list-item {
@@ -598,9 +545,9 @@ footer {
 }
 
 .footer-list-item a {
-    font-size: 12px;
-    line-height: 1;
-    color: #797979;
+  font-size: 12px;
+  line-height: 1;
+  color: #797979;
 }
 
 .recommed-list {
