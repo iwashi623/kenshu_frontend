@@ -178,7 +178,6 @@ header {
   color: #294c7a;
 }
 
-
 /* .ranking */
 .ranking {
   height: 263px;
@@ -388,7 +387,7 @@ header {
   background-image: url("img/icon.png");
   height: 15px;
   width: 15px;
-  margin-right: 5px ;
+  margin-right: 5px;
 }
 
 .main-article-time {
@@ -465,7 +464,6 @@ header {
   border: 1px solid #f1f1f1;
   box-sizing: border-box;
 }
-
 
 /* footer */
 footer {
