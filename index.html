@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="category-header.css" />
-    <link rel="stylesheet" href="ranking.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>kenshu-forntend</title>
   </head>
   <body>
@@ -17,7 +13,9 @@
         <div class="header-small-container">
           <div class="logo">
             <div class="frame">
-              <img src="img/logo.png" alt="" />
+              <a href="#">
+                <img src="img/logo.png" alt="PRTIMESのロゴ" />
+              </a>
             </div>
             <p class="text">
               プレスリリース・ニュースリリース配信サービスのPR TIMES
@@ -26,28 +24,32 @@
           <div class="release">
             <ul class="release-list">
               <li class="release-list-item release-list-font">
-                プレスリリースを受信
+                <a href="#" class="line">プレスリリースを受信</a>
               </li>
-              <li class="release-list-item line"></li>
-              <li class="release-list-item release-list-font">配信を依頼</li>
-              <li class="release-list-item line"></li>
-              <li class="release-list-item release-list-font">ログイン</li>
+              <li class="release-list-item release-list-font">
+                <a href="#" class="line">配信を依頼</a>
+              </li>
+              <li class="release-list-item release-list-font">
+                <a href="#">ログイン</a>
+              </li>
             </ul>
           </div>
           <div class="keyword">
             <input type="text" placeholder="キーワードで検索" />
-            <button><img src="img/search.png" alt="" /></button>
+            <button><img src="img/search.png" alt="検索ロゴ" /></button>
           </div>
         </div>
         <div class="main-header">
           <ul class="main-header-list">
             <li class="main-header-list-item list-press-release">
-              プレスリリース
+              <a href="#" class="line">プレスリリース</a>
             </li>
-            <li class="main-header-list-item line"></li>
-            <li class="main-header-list-item list-ranking">ランキング</li>
-            <li class="main-header-list-item line"></li>
-            <li class="main-header-list-item list-tv">TV</li>
+            <li class="main-header-list-item list-ranking">
+              <a href="#" class="line">ランキング</a>
+            </li>
+            <li class="main-header-list-item list-tv">
+              <a href="#">TV</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -56,166 +58,200 @@
     <div class="category-header">
       <nav class="categories">
         <ul class="category-list">
-          <li class="category-list-item sogo">総合</li>
-          <li class="category-list-item technology">テクノロジー</li>
-          <li class="category-list-item mobile">モバイル</li>
-          <li class="category-list-item apli">アプリ</li>
-          <li class="category-list-item entame">エンタメ</li>
-          <li class="category-list-item beauty">ビューティー</li>
-          <li class="category-list-item fassion">ファッション</li>
-          <li class="category-list-item lifestyle">ライフスタイル</li>
-          <li class="category-list-item buisness">ビジネス</li>
-          <li class="category-list-item gurume">グルメ</li>
-          <li class="category-list-item sports">スポーツ</li>
+          <li class="category-list-item sogo">
+            <a href="#" class="category-link">総合</a>
+          </li>
+          <li class="category-list-item technology">
+            <a href="#" class="category-link">テクノロジー</a>
+          </li>
+          <li class="category-list-item mobile">
+            <a href="#" class="category-link">モバイル</a>
+          </li>
+          <li class="category-list-item apli">
+            <a href="#" class="category-link">アプリ</a>
+          </li>
+          <li class="category-list-item entame">
+            <a href="#" class="category-link">エンタメ</a>
+          </li>
+          <li class="category-list-item beauty">
+            <a href="#" class="category-link">ビューティー</a>
+          </li>
+          <li class="category-list-item fassion">
+            <a href="#" class="category-link">ファッション</a>
+          </li>
+          <li class="category-list-item lifestyle">
+            <a href="#" class="category-link">ライフスタイル</a>
+          </li>
+          <li class="category-list-item buisness">
+            <a href="#" class="category-link">ビジネス</a>
+          </li>
+          <li class="category-list-item gurume">
+            <a href="#" class="category-link">グルメ</a>
+          </li>
+          <li class="category-list-item sports">
+            <a href="#" class="category-link">スポーツ</a>
+          </li>
         </ul>
       </nav>
     </div>
 
     <div class="ranking">
       <div class="box-list">
-        <section class="box1 article">
-          <div class="img-area box1-img">
-            <div class="rank-area">
-              <span class="rank_text">1</span>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="content-text">
-              <p class="content-heading">
-                【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
-              </p>
-            </div>
-            <div class="content-subtext">
-              <div class="time-area claerfix">
-                <div class="time-card"></div>
-                <p class="released-time">2時間前</p>
+        <a href="#" class="box1 article">
+          <article>
+            <div class="img-area box1-img">
+              <div class="rank-area">
+                <span class="rank_text">1</span>
               </div>
-              <div class="company-area">いちから株式会社</div>
-              <div class="pv-count">PV 00,000 / UU 00,000</div>
             </div>
-          </div>
-        </section>
 
-        <section class="box2 article">
-          <div class="img-area box2-img">
-            <div class="rank-area">
-              <span class="rank_text">2</span>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="content-text">
-              <p class="content-heading">
-                従業員に国内最大級の「危険手当」を支給
-              </p>
-            </div>
-            <div class="content-subtext">
-              <div class="time-area">
-                <div class="time-card"></div>
-                <p class="released-time">1時間前</p>
+            <div class="content">
+              <div class="content-text">
+                <p class="content-heading">
+                  【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
+                </p>
               </div>
-              <div class="company-area">株式会社SHIFT</div>
-              <div class="pv-count">PV 00,000 / UU 00,000</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="box3 article">
-          <div class="img-area box3-img">
-            <div class="rank-area">
-              <span class="rank_text">3</span>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="content-text">
-              <p class="content-heading">
-                【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...
-              </p>
-            </div>
-            <div class="content-subtext">
-              <div class="time-area">
-                <div class="time-card"></div>
-                <p class="released-time">2時間前</p>
+              <div class="content-subtext">
+                <div class="time-area claerfix">
+                  <div class="time-card"></div>
+                  <p class="released-time">2時間前</p>
+                </div>
+                <div class="company-area">いちから株式会社</div>
+                <div class="pv-count">PV 00,000 / UU 00,000</div>
               </div>
-              <div class="company-area">いちから株式会社</div>
-              <div class="pv-count">PV 00,000 / UU 00,000</div>
             </div>
-          </div>
-        </section>
+          </article>
+        </a>
 
-        <section class="box4 article">
-          <div class="img-area box4-img">
-            <div class="rank-area">
-              <span class="rank_text">4</span>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="content-text">
-              <p class="content-heading">
-                【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
-              </p>
-            </div>
-            <div class="content-subtext">
-              <div class="time-area">
-                <div class="time-card"></div>
-                <p class="released-time">200年3月10</p>
+        <a href="#" class="box2 article">
+          <article>
+            <div class="img-area box2-img">
+              <div class="rank-area">
+                <span class="rank_text">2</span>
               </div>
-              <div class="company-area">いちから株式会社</div>
-              <div class="pv-count">PV 00,000 / UU 00,000</div>
             </div>
-          </div>
-        </section>
 
-        <section class="box5 article">
-          <div class="img-area box5-img">
-            <div class="rank-area">
-              <span class="rank_text">5</span>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="content-text">
-              <p class="content-heading">
-                ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝
-              </p>
-            </div>
-            <div class="content-subtext">
-              <div class="time-area">
-                <div class="time-card"></div>
-                <p class="released-time">2時間前</p>
+            <div class="content">
+              <div class="content-text">
+                <p class="content-heading">
+                  従業員に国内最大級の「危険手当」を支給
+                </p>
               </div>
-              <div class="company-area">いちから株式会社</div>
-              <div class="pv-count">PV 00,000 / UU 00,000</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="box6 article">
-          <div class="img-area box6-img">
-            <div class="rank-area">
-              <span class="rank_text">6</span>
-            </div>
-          </div>
-
-          <div class="content">
-            <div class="content-text">
-              <p class="content-heading">
-                東京証券取引所市場第一部へのお知らせ
-              </p>
-            </div>
-            <div class="content-subtext">
-              <div class="time-area">
-                <div class="time-card"></div>
-                <p class="released-time">2時間前</p>
+              <div class="content-subtext">
+                <div class="time-area">
+                  <div class="time-card"></div>
+                  <p class="released-time">1時間前</p>
+                </div>
+                <div class="company-area">株式会社SHIFT</div>
+                <div class="pv-count">PV 00,000 / UU 00,000</div>
               </div>
-              <div class="company-area">いちから株式会社</div>
-              <div class="pv-count">PV 00,000 / UU 00,000</div>
             </div>
-          </div>
-        </section>
+          </article>
+        </a>
+
+        <a href="#" class="box3 article">
+          <article>
+            <div class="img-area box3-img">
+              <div class="rank-area">
+                <span class="rank_text">3</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content-text">
+                <p class="content-heading">
+                  【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...
+                </p>
+              </div>
+              <div class="content-subtext">
+                <div class="time-area">
+                  <div class="time-card"></div>
+                  <p class="released-time">2時間前</p>
+                </div>
+                <div class="company-area">いちから株式会社</div>
+                <div class="pv-count">PV 00,000 / UU 00,000</div>
+              </div>
+            </div>
+          </article>
+        </a>
+
+        <a href="#" class="box4 article">
+          <article>
+            <div class="img-area box4-img">
+              <div class="rank-area">
+                <span class="rank_text">4</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content-text">
+                <p class="content-heading">
+                  【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
+                </p>
+              </div>
+              <div class="content-subtext">
+                <div class="time-area">
+                  <div class="time-card"></div>
+                  <p class="released-time">200年3月10</p>
+                </div>
+                <div class="company-area">いちから株式会社</div>
+                <div class="pv-count">PV 00,000 / UU 00,000</div>
+              </div>
+            </div>
+          </article>
+        </a>
+
+        <a href="#" class="box5 article">
+          <article>
+            <div class="img-area box5-img">
+              <div class="rank-area">
+                <span class="rank_text">5</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content-text">
+                <p class="content-heading">
+                  ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝
+                </p>
+              </div>
+              <div class="content-subtext">
+                <div class="time-area">
+                  <div class="time-card"></div>
+                  <p class="released-time">2時間前</p>
+                </div>
+                <div class="company-area">いちから株式会社</div>
+                <div class="pv-count">PV 00,000 / UU 00,000</div>
+              </div>
+            </div>
+          </article>
+        </a>
+
+        <a href="#" class="box6 article">
+          <article>
+            <div class="img-area box6-img">
+              <div class="rank-area">
+                <span class="rank_text">6</span>
+              </div>
+            </div>
+
+            <div class="content">
+              <div class="content-text">
+                <p class="content-heading">
+                  東京証券取引所市場第一部へのお知らせ
+                </p>
+              </div>
+              <div class="content-subtext">
+                <div class="time-area">
+                  <div class="time-card"></div>
+                  <p class="released-time">2時間前</p>
+                </div>
+                <div class="company-area">いちから株式会社</div>
+                <div class="pv-count">PV 00,000 / UU 00,000</div>
+              </div>
+            </div>
+          </article>
+        </a>
       </div>
     </div>
 
@@ -224,12 +260,12 @@
         <div class="title">新着プレスリリース</div>
         <div class="contents">
           <div class="articles">
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019
                   JAPAN」に登壇！マイボトル化推進...
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -237,13 +273,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   近くの飲食店を社食として利用できる【どこでも社食】が「東京純豆腐」と提携
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -251,13 +287,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   創業10年で10件の特許を取得！
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -265,13 +301,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   チャット型検索エンジン『CHAT EXTENSION』を提供開始
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -279,13 +315,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   AWAが月額480円の新プラン「学生プラン」をスタート
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -293,14 +329,14 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   ブシロード公認カードゲーム専門店支援施策
                   3月度還元額を公認店様へご案内！
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -308,14 +344,14 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   TikTokで話題の楽曲「HOT
                   SONG」3月度版プレイリストを「AWA」で公開
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -323,13 +359,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   NHK　Eテレ「おかあさんといっしょ」で子どもたちに人気の体操「からだ☆ダンダン」のＴシャツが発売決..
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -337,13 +373,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   4月13日以降の串カツ田中店舗営業に関して
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -351,13 +387,13 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
 
-            <section class="main-article">
+            <article class="main-article">
               <div class="main-article-heading">
-                <div class="main-article-title">
+                <a href="#" class="main-article-title">
                   カフェのサブスク「CAFE PASS」がLINEログインに対応。
-                </div>
+                </a>
                 <div class="main-artcle-image"></div>
               </div>
               <div class="main-article-subarea">
@@ -365,22 +401,23 @@
                 <div class="main-article-time">5分前</div>
                 <div class="main-article-company">BRITA Japan株式会社</div>
               </div>
-            </section>
+            </article>
           </div>
           <button>もっと見る</button>
         </div>
       </main>
+
       <div class="side">
         <div class="side-area">
           <div class="side-title">今注目のキーワード</div>
           <div class="keywords">
-            <div class="side-keyword sakura">桜</div>
-            <div class="side-keyword reiwa">令和</div>
-            <div class="side-keyword telework">テレワーク</div>
-            <div class="side-keyword aplil">#AprilDream</div>
-            <div class="side-keyword money">電子マネー</div>
-            <div class="side-keyword reiwa">令和</div>
-            <div class="side-keyword motto">もっと見る</div>
+            <a href="#" class="side-keyword sakura">桜</a>
+            <a href="#" class="side-keyword reiwa">令和</a>
+            <a href="#" class="side-keyword telework">テレワーク</a>
+            <a href="#" class="side-keyword aplil">#AprilDream</a>
+            <a href="#" class="side-keyword money">電子マネー</a>
+            <a href="#" class="side-keyword reiwa">令和</a>
+            <a href="#" class="side-keyword motto">もっと見る</a>
           </div>
         </div>
       </div>
@@ -390,75 +427,93 @@
       <div class="footer-container">
         <div class="footer-contents">
           <div class="footer-lists">
-            <ul class="news-list list-style">
-              <li class="news-list-item footer-list-item">
-                ニュースリリース配信サービス
-              </li>
-              <li class="news-list-item footer-list-item">PR TIMESとは</li>
-              <li class="news-list-item footer-list-item">料金・プラン</li>
-              <li class="news-list-item footer-list-item">
-                プレスリリースを受信したい方へ
-              </li>
-              <li class="news-list-item footer-list-item">
-                プレスリリースを配信したい方へ
-              </li>
-              <li class="news-list-item footer-list-item">ログイン</li>
-            </ul>
-            <ul class="recommed-list list-style">
+            <div class="news-list">
+              <h4 class="list-title">ニュースリリース配信サービス</h4>
+              <ul class="list-style">
+                <li class="news-list-item footer-list-item">
+                  <a href="#"> PR TIMESとは </a>
+                </li>
+                <li class="news-list-item footer-list-item">
+                  <a href="#"> 料金・プラン </a>
+                </li>
+                <li class="news-list-item footer-list-item">
+                  <a href="#"> プレスリリースを受信したい方へ </a>
+                </li>
+                <li class="news-list-item footer-list-item">
+                  <a href="#"> プレスリリースを配信したい方へ </a>
+                </li>
+                <li class="news-list-item footer-list-item">
+                  <a href="#"> ログイン </a>
+                </li>
+              </ul>
+            </div>
+            <div class="recommed-list">
               <div class="recommed-list-1">
-                <li class="recommend-list-item footer-list-item">
-                  レコメンドサービス
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  無料FAQならTayori
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  無料メールフォームならTayori
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  タスク・プロジェクト管理ツールのJooto
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  PR TIMES TV
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  PR TIMES LIVE
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  PR TIMES MAGAZINE
-                </li>
+                <h4 class="list-title">レコメンドサービス</h4>
+                <ul>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> 無料FAQならTayori </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> 無料メールフォームならTayori </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> タスク・プロジェクト管理ツールのJooto </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> PR TIMES TV </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> PR TIMES LIVE </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> PR TIMES MAGAZINE </a>
+                  </li>
+                </ul>
               </div>
               <div class="recommend-list-2">
-                <li class="recommend-list-item footer-list-item"></li>
-                <li class="recommend-list-item footer-list-item">
-                  クリッピング
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  料金・広告ならAdGang
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  無料占い・今週の運勢ならisuta
-                </li>
-                <li class="recommend-list-item footer-list-item">
-                  無料恋愛占いならならisuta
-                </li>
+                <ul>
+                  <li class="recommend-list-item footer-list-item list-title"></li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> クリッピング </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> 料金・広告ならAdGang </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> 無料占い・今週の運勢ならisuta </a>
+                  </li>
+                  <li class="recommend-list-item footer-list-item">
+                    <a href="#"> 無料恋愛占いならならisuta </a>
+                  </li>
+                </ul>
               </div>
-            </ul>
-            <ul class="sns-list list-style">
-              <li class="sns-list-item footer-list-item">PR TIMES公式SNS</li>
-              <li class="sns-list-item footer-list-item">公式Facebookページ</li>
-              <li class="sns-list-item footer-list-item">Facebookカテゴリ</li>
-              <li class="sns-list-item footer-list-item">公式Twitterページ</li>
-              <li class="sns-list-item footer-list-item">Twitterカテゴリ</li>
-            </ul>
+            </div>
+            <div class="sns-list list-style">
+              <h4 class="list-title">PR TIMES公式SNS</h4>
+              <ul>
+                <li class="sns-list-item footer-list-item">
+                  <a href="#"> 公式Facebookページ </a>
+                </li>
+                <li class="sns-list-item footer-list-item">
+                  <a href="#"> Facebookカテゴリ </a>
+                </li>
+                <li class="sns-list-item footer-list-item">
+                  <a href="#"> 公式Twitterページ </a>
+                </li>
+                <li class="sns-list-item footer-list-item">
+                  <a href="#"> Twitterカテゴリ </a>
+                </li>
+              </ul>              
+            </div>
           </div>
           <div class="footer-term">
-            <p class="footer-term-item">会社概要</p>
-            <p class="footer-term-item">プライバシーポリシー</p>
-            <p class="footer-term-item">情報セキュリティ基本方針</p>
-            <p class="footer-term-item">プレスリリース掲載基準</p>
-            <p class="footer-term-item">利用規約</p>
-            <p class="footer-term-item">お問い合わせ</p>
+            <a href="#" class="footer-term-item">会社概要</a>
+            <a href="#" class="footer-term-item">プライバシーポリシー</a>
+            <a href="#" class="footer-term-item">情報セキュリティ基本方針</a>
+            <a href="#" class="footer-term-item">プレスリリース掲載基準</a>
+            <a href="#" class="footer-term-item">利用規約</a>
+            <a href="#" class="footer-term-item">お問い合わせ</a>
           </div>
           <div class="footer-copyright">
             <p class="footer-copyright-item">
