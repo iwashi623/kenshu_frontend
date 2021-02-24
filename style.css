@@ -308,6 +308,7 @@ header {
   font-weight: bold;
   font-size: 1.7rem;
   line-height: 1;
+  margin-left: -3px;
   color: #ffffff;
 }
 
@@ -445,7 +446,7 @@ header {
   background-image: url("img/icon.png");
   height: 15px;
   width: 15px;
-  margin-right: 5px;
+  margin: -2px 5px 0 0;
 }
 
 .main-article-time {
