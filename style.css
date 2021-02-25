@@ -156,8 +156,6 @@ header {
 }
 
 .category-list {
-  width: 837px;
-  height: 13px;
   display: flex;
 }
 
@@ -195,9 +193,7 @@ header {
 
 .article {
   width: 181px;
-  margin-right: 8px;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin: 22px 8px 22px 0;
   background-color: white;
 }
 
