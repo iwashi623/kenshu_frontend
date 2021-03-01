@@ -490,13 +490,13 @@ html {
   line-height: 1;
 }
 
-.footer__list_item {
+.footer__list__item {
   height: 1.3rem;
   margin-bottom: 18px;
   line-height: 1;
 }
 
-.footer__list_item > a {
+.footer__list__item > a {
   font-size: 12px;
   line-height: 1;
   color: #797979;
