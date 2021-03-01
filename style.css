@@ -484,19 +484,19 @@ html {
   height: 210px;
 }
 
-.footer__list__title {
+.footer__list_title {
   font-size: 1.2rem;
   margin-bottom: 18px;
   line-height: 1;
 }
 
-.footer__list__item {
+.footer__list_item {
   height: 1.3rem;
   margin-bottom: 18px;
   line-height: 1;
 }
 
-.footer__list__item a {
+.footer__list_item > a {
   font-size: 12px;
   line-height: 1;
   color: #797979;
@@ -508,7 +508,7 @@ html {
   display: flex;
 }
 
-.footer__recommend-list-1 {
+.footer__recommend-list-first {
   width: 259px;
 }
 
