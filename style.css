@@ -344,14 +344,14 @@ html {
   margin-right: 18px;
 }
 
-.main-article__heading {
+.main-article-heading {
   margin-top: 15px;
   height: 66px;
   font-size: 0;
   display: flex;
 }
 
-.main-article__title {
+.main-article-heading__title {
   text-align: left;
   font-weight: bold;
   font-size: 1.4rem;
@@ -363,19 +363,19 @@ html {
 }
 
 
-.main-artcle__image {
+.main-artcle-heading__image {
   width: 100px;
   height: 100%;
   background-image: url("img/sushi.png");
 }
 
-.main-article__subarea {
+.main-article-subarea {
   text-align: left;
   margin-top: 4px;
   font-size: 0;
 }
 
-.main-article__timeimage {
+.main-article-subarea__timeimage {
   vertical-align: middle;
   display: inline-block;
   background-image: url("img/icon.png");
@@ -384,7 +384,7 @@ html {
   margin-right: 5px;
 }
 
-.main-article__time {
+.main-article-subarea__time {
   vertical-align: middle;
   margin-right: 12px;
   display: inline-block;
@@ -393,7 +393,7 @@ html {
   color: #a2a2a2;
 }
 
-.main-article__company {
+.main-article-subarea__company {
   vertical-align: middle;
   display: inline-block;
   font-size: 1.3rem;
