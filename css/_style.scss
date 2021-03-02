@@ -1,7 +1,7 @@
 /* header */
 .header {
   @include withAndHeight($height: 75px);
-  background: #24436f;
+  background: $header-background;
 }
 
 .header-container {
@@ -23,7 +23,7 @@
     margin-left: 18px;
     font-size: 1.2rem;
     @extend %flex-style;
-    color: #bfc9d7;
+    color: $header-logo-text;
   }
 }
 
@@ -55,7 +55,7 @@
 
 .line {
   @include boxBase(0 10px 0 0, 0 10px 0 0);
-  border-right: 1px solid #bfc9d7;
+  border-right: 1px solid $line-color;
 }
 
 .header-keyword {
@@ -72,13 +72,13 @@
       @include withAndHeight(228px, 25px);
       font-size: 1.3rem;
       @extend %flex-style;
-      color: #bbbbbb;
+      color: $keyword-textarea;
     }
   }
 
   &__button {
     @include withAndHeight(30px, 30px);
-    background: #3081c9;
+    background: $button-color;
     @include kadomaru(0 4px 4px 0);
     justify-content: center;
     @extend %flex-style;
@@ -97,7 +97,7 @@
 
   &__item > a {
     font-size: 1.3rem;
-    color: #bfc9d7;
+    color: $main-header-item;
   }
 
   &__item:nth-child(1) > a {
@@ -149,7 +149,7 @@
 .ranking-article {
   @include withAndHeight($width: 181px);
   margin: 22px 8px 22px 0;
-  background-color: white;
+  background-color: $white;
 
   &:nth-last-child(1) {
     margin-right: 0px;
@@ -169,7 +169,7 @@
     font-weight: normal;
     font-size: 1.3rem;
     line-height: 1.4;
-    color: #3b3b3b;
+    color: $main-text-color;
     @include withAndHeight($height: 57.6px);
   }
 
@@ -184,7 +184,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #24436f;
+  background-color: $rankarea;
   justify-content: center;
   @extend %flex-style;
 
@@ -205,7 +205,7 @@
 
   &__card {
     @include withAndHeight(15px, 100%);
-    background-image: url("img/icon.png");
+    background-image: url("../img/icon.png");
     background-position: center;
     background-size: cover;
     margin-right: 5px;
@@ -246,7 +246,7 @@
   &__button {
     @include withAndHeight(110px, 38px);
     margin-top: 30px;
-    background: #3081c9;
+    background: $button-color;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
     @include kadomaru(2px);
     font-weight: bold;
@@ -260,7 +260,7 @@
   padding-bottom: 20px;
   font-weight: bold;
   font-size: 2.4rem;
-  color: #3b3b3b;
+  color: $main-text-color;
 }
 
 .contents {
@@ -276,7 +276,7 @@
 .main-article {
   @include withAndHeight(380px, 118px);
   display: inline-block;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid $main-border;
 
   &:nth-child(odd) {
     margin-right: 18px;
@@ -294,7 +294,7 @@
     font-weight: bold;
     font-size: 1.4rem;
     line-height: 1.6;
-    color: #3b3b3b;
+    color: $main-text-color;
     @include withAndHeight(265px, 100%);
     margin-right: 15px;
   }
@@ -342,28 +342,28 @@
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 1.5;
-    color: #3b3b3b;
+    color: $main-text-color;
     padding-bottom: 43px;
   }
 
   &__keywords {
     @include withAndHeight(309px, 73px);
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid $main-border;
   }
 
   &__keyword {
     display: inline-block;
-    background: #f1f1f1;
+    background: $keyword-color;
     @include kadomaru(11px);
     font-size: 1.2rem;
     line-height: 180%;
-    color: #3b3b3b;
+    color: $main-text-color;
     text-align: center;
     @include boxBase(0 9px 10px 0, 0 8px);
 
     &:nth-last-child(1) {
-      background-color: white;
-      border: 1px solid #f1f1f1;
+      background-color: $white;
+      border: 1px solid $keyword-color;
     }
   }
 }
@@ -371,7 +371,7 @@
 /* footer */
 .footer {
   @include withAndHeight(100%, 356px);
-  background: #fafafa;
+  background: $footer-background;
 
   &__container {
     @include boxBase(0 auto, 60px 0 0 0);
@@ -385,7 +385,7 @@
   &__lists {
     @include withAndHeight(1125px, 230px);
     padding-bottom: 20px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid $footer-border;
     display: flex;
   }
 }
@@ -408,7 +408,7 @@
     > a {
       font-size: 1.2rem;
       line-height: 1;
-      color: #797979;
+      color: $footer-text-color;
     }
   }
 }
@@ -419,7 +419,7 @@
 
   &__item {
     font-size: 1.2rem;
-    color: #797979;
+    color: $footer-text-color;
     margin-right: 20px;
   }
 }
@@ -430,7 +430,7 @@
   &__item {
     display: inline;
     font-size: 1.1rem;
-    color: #797979;
+    color: $footer-text-color;
     vertical-align: top;
   }
 }
