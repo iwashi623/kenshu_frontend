@@ -1,66 +1,48 @@
-// reset
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
-
-html {
-  font-size: 62.5%;
-}
-
 /* header */
 .header {
-  height: 75px;
+  @include withAndHeight($height: 75px);
   background: #24436f;
 }
 
 .header-container {
-  height: 75px;
-  width: 1126px;
+  @include withAndHeight(1126px, 75px);
   margin: 0 auto;
   position: relative;
 }
 
 .header-logo {
-  width: 485px;
+  @include withAndHeight($width: 485px);
   display: flex;
 
   &__image {
     margin-top: 4px;
-    display: flex;
-    align-items: center;
+    @extend %flex-style;
   }
 
   &__text {
     margin-left: 18px;
     font-size: 1.2rem;
-    display: flex;
-    align-items: center;
+    @extend %flex-style;
     color: #bfc9d7;
   }
 }
 
 .header-release {
-  width: 316px;
-  height: 30px;
+  @include withAndHeight(316px, 30px);
   margin-left: 26px;
   background: #345584;
-  border-radius: 4px;
+  @include kadomaru(4px);
 }
 
 .release-list {
-  display: flex;
-  align-items: center;
+  @extend %flex-style;
+  @include withAndHeight($height: 100%);
   justify-content: center;
-  height: 100%;
 
   &__item {
     > a {
       font-size: 1.3rem;
-      color: #ffffff;
+      color: $white;
     }
   }
 }
@@ -72,56 +54,46 @@ html {
 }
 
 .line {
-  padding-right: 10px;
-  margin-right: 10px;
+  @include boxBase(0 10px 0 0, 0 10px 0 0);
   border-right: 1px solid #bfc9d7;
 }
 
 .header-keyword {
-  width: 288px;
-  height: 30px;
+  @include withAndHeight(288px, 30px);
   margin-left: 11px;
   display: flex;
 
   &__text {
-    width: 258px;
-    height: 30px;
-    border: none;
-    border-radius: 4px 0px 0px 4px;
+    @include withAndHeight(258px, 30px);
+    @include kadomaru(4px 0 0 4px);
 
     &::placeholder {
       padding: 2px 15px;
-      width: 228px;
-      height: 25px;
+      @include withAndHeight(228px, 25px);
       font-size: 1.3rem;
-      display: flex;
-      align-items: center;
+      @extend %flex-style;
       color: #bbbbbb;
     }
   }
 
   &__button {
-    width: 30px;
-    height: 30px;
+    @include withAndHeight(30px, 30px);
     background: #3081c9;
-    border-radius: 0px 4px 4px 0px;
-    border: none;
-    display: flex;
+    @include kadomaru(0 4px 4px 0);
     justify-content: center;
-    align-items: center;
+    @extend %flex-style;
   }
 }
 
 .main-header {
   position: absolute;
   top: 52px;
-  height: 15px;
+  @include withAndHeight($height: 15px);
 }
 
 .main-header-list {
-  height: 100%;
-  display: flex;
-  align-items: center;
+  @include withAndHeight($height: 100%);
+  @extend %flex-style;
 
   &__item > a {
     font-size: 1.3rem;
@@ -131,19 +103,18 @@ html {
   &__item:nth-child(1) > a {
     margin-left: -1px;
     font-weight: bold;
-    color: #ffffff;
+    color: $white;
   }
 }
 
 /* .category-header */
 .category-header {
-  height: 36px;
+  @include withAndHeight($height: 36px);
 }
 
 .category-list {
-  margin: 0 auto;
-  width: 837px;
-  padding-top: 13px;
+  @include boxBase(0 auto, 13px 0 0 0);
+  @include withAndHeight($width: 837px);
   display: flex;
 
   &__item {
@@ -164,21 +135,19 @@ html {
 
 /* .ranking */
 .ranking {
-  height: 263px;
+  @include withAndHeight($height: 263px);
   background: #f2f2f2;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  @extend %flex-style;
 }
 
 .ranking-box-list {
-  width: 1126px;
-  height: 100%;
+  @include withAndHeight(1126px, 100%);
   display: flex;
 }
 
 .ranking-article {
-  width: 181px;
+  @include withAndHeight($width: 181px);
   margin: 22px 8px 22px 0;
   background-color: white;
 
@@ -193,7 +162,7 @@ html {
 
   &__content {
     padding: 9px 10px;
-    width: 181px;
+    @include withAndHeight($width: 181px);
   }
 
   &__heading {
@@ -201,7 +170,7 @@ html {
     font-size: 1.3rem;
     line-height: 1.4;
     color: #3b3b3b;
-    height: 57.6px;
+    @include withAndHeight($height: 57.6px);
   }
 
   &__subtext {
@@ -211,15 +180,13 @@ html {
 }
 
 .rank-area {
-  height: 24px;
-  width: 24px;
+  @include withAndHeight(24px, 24px);
   position: absolute;
   top: 0;
   left: 0;
   background-color: #24436f;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  @extend %flex-style;
 
   &__text {
     font-family: Roboto;
@@ -228,18 +195,16 @@ html {
     font-size: 1.7rem;
     line-height: 1;
     margin-left: -3px;
-    color: #ffffff;
+    color: $white;
   }
 }
 
 .time-area {
-  height: 15px;
-  width: 52px;
+  @include withAndHeight(52px, 15px);
   display: flex;
 
   &__card {
-    height: 100%;
-    width: 15px;
+    @include withAndHeight(15px, 100%);
     background-image: url("img/icon.png");
     background-position: center;
     background-size: cover;
@@ -249,7 +214,7 @@ html {
 
   &__releasedTime {
     font-size: 1.2rem;
-    color: #a2a2a2;
+    color: $article-text;
     flex: none;
     padding-top: 2px;
   }
@@ -257,13 +222,13 @@ html {
 
 .company-area {
   font-size: 1.3rem;
-  color: #a2a2a2;
+  color: $article-text;
   padding-top: 2px;
 }
 
 .pv-count {
   font-size: 1.2rem;
-  color: #a2a2a2;
+  color: $article-text;
   line-height: 1.5;
 }
 
@@ -271,25 +236,22 @@ html {
 
 .wrapper {
   margin: 40.65px auto 0 auto;
-  width: 1127px;
-  height: 803.35px;
+  @include withAndHeight(1127px, 803.35px);
   display: flex;
 }
 
 .main {
-  width: 779px;
-  height: 733.35px;
+  @include withAndHeight(779px, 733.35px);
 
   &__button {
-    height: 38px;
-    width: 110px;
+    @include withAndHeight(110px, 38px);
     margin-top: 30px;
     background: #3081c9;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 2px;
+    @include kadomaru(2px);
     font-weight: bold;
     font-size: 1.4rem;
-    color: #ffffff;
+    color: $white;
     border: none;
   }
 }
@@ -302,19 +264,17 @@ html {
 }
 
 .contents {
-  width: 778px;
-  height: 658px;
+  @include withAndHeight(778px, 658px);
   text-align: center;
 }
 
 .articles {
-  height: 590px;
+  @include withAndHeight($height: 590px);
   font-size: 0;
 }
 
 .main-article {
-  width: 380px;
-  height: 118px;
+  @include withAndHeight(380px, 118px);
   display: inline-block;
   border-bottom: 1px solid #e4e4e4;
 
@@ -324,7 +284,7 @@ html {
 
   &__heading {
     margin-top: 15px;
-    height: 66px;
+    @include withAndHeight($height: 66px);
     font-size: 0;
     display: flex;
   }
@@ -335,14 +295,12 @@ html {
     font-size: 1.4rem;
     line-height: 1.6;
     color: #3b3b3b;
-    width: 265px;
-    height: 100%;
+    @include withAndHeight(265px, 100%);
     margin-right: 15px;
   }
 
   &__image {
-    width: 100px;
-    height: 100%;
+    @include withAndHeight(100px, 100%);
   }
 
   &__subarea {
@@ -354,9 +312,8 @@ html {
   &__timeimage {
     vertical-align: middle;
     display: inline-block;
-    height: 15px;
-    width: 15px;
     margin-right: 5px;
+    @include withAndHeight(15px, 15px);
   }
 
   &__time {
@@ -365,7 +322,7 @@ html {
     display: inline-block;
     font-size: 1.2rem;
     line-height: 1;
-    color: #a2a2a2;
+    color: $article-text;
   }
 
   &__company {
@@ -373,13 +330,12 @@ html {
     display: inline-block;
     font-size: 1.3rem;
     line-height: 1;
-    color: #a2a2a2;
+    color: $article-text;
   }
 }
 
 .side-bar {
-  width: 312px;
-  height: 733.35px;
+  @include withAndHeight(312px, 733.35px);
   margin-left: 36px;
 
   &__title {
@@ -391,52 +347,43 @@ html {
   }
 
   &__keywords {
-    height: 73px;
-    width: 309px;
+    @include withAndHeight(309px, 73px);
     border-bottom: 1px solid #e4e4e4;
   }
 
   &__keyword {
     display: inline-block;
     background: #f1f1f1;
-    border-radius: 11px;
+    @include kadomaru(11px);
     font-size: 1.2rem;
     line-height: 180%;
     color: #3b3b3b;
     text-align: center;
-    padding: 0 8px;
-    margin-right: 10px;
-    margin-bottom: 9px;
+    @include boxBase(0 9px 10px 0, 0 8px);
 
     &:nth-last-child(1) {
       background-color: white;
       border: 1px solid #f1f1f1;
-      box-sizing: border-box;
     }
   }
 }
 
 /* footer */
 .footer {
-  width: 100%;
-  height: 356px;
+  @include withAndHeight(100%, 356px);
   background: #fafafa;
 
   &__container {
-    padding-top: 60px;
-    margin: 0 auto;
-    width: 1127px;
-    height: 296px;
+    @include boxBase(0 auto, 60px 0 0 0);
+    @include withAndHeight(1127px, 296px);
   }
 }
 
 .footer-contents {
-  height: 296px;
-  width: 100%;
+  @include withAndHeight(100%, 296px);
 
   &__lists {
-    width: 1125px;
-    height: 230px;
+    @include withAndHeight(1125px, 230px);
     padding-bottom: 20px;
     border-bottom: 1px solid #e0e0e0;
     display: flex;
@@ -444,8 +391,7 @@ html {
 }
 
 .footer-list {
-  width: 25%;
-  height: 210px;
+  @include withAndHeight(25%, 210px);
 
   &__title {
     font-size: 1.2rem;
@@ -455,13 +401,12 @@ html {
   }
 
   &__item {
-    width: 100%;
-    height: 1.3rem;
+    @include withAndHeight(100%, 1.3rem);
     margin-bottom: 18px;
     line-height: 1;
 
     > a {
-      font-size: 12px;
+      font-size: 1.2rem;
       line-height: 1;
       color: #797979;
     }
@@ -469,21 +414,18 @@ html {
 }
 
 .footer-term {
-  width: 1125px;
-  height: 46px;
-  display: flex;
-  align-items: center;
+  @include withAndHeight(1125px, 46px);
+  @extend %flex-style;
 
   &__item {
-    font-size: 12px;
+    font-size: 1.2rem;
     color: #797979;
     margin-right: 20px;
   }
 }
 
 .footer-copyright {
-  width: 1125px;
-  height: 20px;
+  @include withAndHeight(1125px, 20px);
 
   &__item {
     display: inline;

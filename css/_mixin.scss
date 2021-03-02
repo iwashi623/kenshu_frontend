@@ -1,0 +1,14 @@
+@mixin withAndHeight($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin boxBase($margin: 0 0 0 0, $padding: 0 0 0 0) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin kadomaru($radius: 0 0 0 0) {
+  border-radius: $radius;
+  border: none;
+}
