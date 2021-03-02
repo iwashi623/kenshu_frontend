@@ -338,7 +338,6 @@ html {
 .main-artcle__image {
   width: 100px;
   height: 100%;
-  background-image: url("img/sushi.png");
 }
 
 .main-article__subarea {
@@ -350,7 +349,6 @@ html {
 .main-article__timeimage {
   vertical-align: middle;
   display: inline-block;
-  background-image: url("img/icon.png");
   height: 15px;
   width: 15px;
   margin-right: 5px;
