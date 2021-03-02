@@ -196,41 +196,15 @@ html {
 
 .ranking-article__img {
   height: 100px;
-  background-position: center;
-  background-size: cover;
-}
-
-.ranking-article__img > div {
-  height: 100%;
-}
-
-.box1-img {
-  background-image: url("img/article1.png");
-}
-
-.box2-img {
-  background-image: url("img/article2.png");
-}
-
-.box3-img {
-  background-image: url("img/article3.png");
-}
-
-.box4-img {
-  background-image: url("img/article4.png");
-}
-
-.box5-img {
-  background-image: url("img/article5.png");
-}
-
-.box6-img {
-  background-image: url("img/article6.png");
+  position: relative;
 }
 
 .rank-area {
   height: 24px;
   width: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #24436f;
   display: flex;
   justify-content: center;
@@ -361,7 +335,7 @@ html {
   margin-right: 15px;
 }
 
-.main-artcle-heading__image {
+.main-artcle__image {
   width: 100px;
   height: 100%;
   background-image: url("img/sushi.png");
