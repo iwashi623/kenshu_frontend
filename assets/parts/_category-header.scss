@@ -1,0 +1,25 @@
+/* .category-header */
+.category-header {
+  @include widthAndHeight($height: 36px);
+}
+
+.category-list {
+  @include boxBase(0 auto, 13px 0 0 0);
+  @include widthAndHeight($width: 837px);
+  display: flex;
+
+  &__item {
+    margin-right: 20px;
+    white-space: nowrap;
+    line-height: 1;
+
+    &:nth-child(1) > a {
+      font-weight: bold;
+    }
+  }
+}
+
+.category-link {
+  font-size: 1.3rem;
+  color: $category-link;
+}

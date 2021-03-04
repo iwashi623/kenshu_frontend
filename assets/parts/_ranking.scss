@@ -1,0 +1,100 @@
+/* .ranking */
+.ranking {
+    @include widthAndHeight($height: 263px);
+    background: $rainking-background;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+    &-box-list {
+      @include widthAndHeight(1126px, 100%);
+      display: flex;
+    }
+  
+    &-article {
+      @include widthAndHeight($width: 181px);
+      margin: 22px 8px 22px 0;
+      background-color: $white;
+  
+      &:nth-last-child(1) {
+        margin-right: 0px;
+      }
+  
+      &__img {
+        height: 100px;
+        position: relative;
+      }
+  
+      &__content {
+        padding: 9px 10px;
+        @include widthAndHeight($width: 181px);
+      }
+  
+      &__heading {
+        font-weight: normal;
+        font-size: 1.3rem;
+        line-height: 1.4;
+        color: $main-text-color;
+        @include widthAndHeight($height: 57.6px);
+      }
+  
+      &__subtext {
+        line-height: 1;
+        vertical-align: middle;
+      }
+    }
+  
+    &-rank-area {
+      @include widthAndHeight(24px, 24px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $rankarea;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+  
+      &__text {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.7rem;
+        line-height: 1;
+        margin-left: -3px;
+        color: $white;
+      }
+    }
+  
+    &-time-area {
+      @include widthAndHeight(52px, 15px);
+      display: flex;
+  
+      &__card {
+        @include widthAndHeight(15px, 100%);
+        background-image: url("../img/icon.png");
+        background-position: center;
+        background-size: cover;
+        margin-right: 5px;
+        flex: none;
+      }
+  
+      &__releasedTime {
+        font-size: 1.2rem;
+        color: $article-text;
+        flex: none;
+        padding-top: 2px;
+      }
+    }
+  
+    &-company-area {
+      font-size: 1.3rem;
+      color: $article-text;
+      padding-top: 2px;
+    }
+  
+    &-pv-count {
+      font-size: 1.2rem;
+      color: $article-text;
+      line-height: 1.5;
+    }
+  }

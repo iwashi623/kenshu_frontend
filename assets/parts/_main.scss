@@ -1,0 +1,131 @@
+/* main */
+
+.wrapper {
+    margin: 40.65px auto 0 auto;
+    @include widthAndHeight(1127px, 803.35px);
+    display: flex;
+  }
+  
+  .main {
+    @include widthAndHeight(779px, 733.35px);
+  
+    &__button {
+      @include widthAndHeight(110px, 38px);
+      margin-top: 30px;
+      background: $button-color;
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+      @include kadomaru(2px);
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: $white;
+      border: none;
+    }
+  
+    &-article {
+      @include widthAndHeight(380px, 118px);
+      display: inline-block;
+      border-bottom: 1px solid $main-border;
+      text-align: left;
+  
+      &:nth-child(odd) {
+        margin-right: 18px;
+      }
+  
+      &__heading {
+        margin-top: 15px;
+        @include widthAndHeight($height: 66px);
+        display: flex;
+      }
+  
+      &__title {
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: $main-text-color;
+        @include widthAndHeight(265px, 100%);
+        margin-right: 15px;
+      }
+  
+      &__image {
+        @include widthAndHeight(100px, 100%);
+      }
+  
+      &__subarea {
+        margin-top: 4px;
+        font-size: 0;
+      }
+  
+      &__timeimage {
+        vertical-align: middle;
+        margin-right: 5px;
+        @include widthAndHeight(15px, 15px);
+      }
+  
+      &__time {
+        vertical-align: middle;
+        margin-right: 12px;
+        display: inline-block;
+        font-size: 1.2rem;
+        line-height: 1;
+        color: $article-text;
+      }
+  
+      &__company {
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 1.3rem;
+        line-height: 1;
+        color: $article-text;
+      }
+    }
+  
+    &-title {
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 2.4rem;
+      color: $main-text-color;
+    }
+  
+    &-contents {
+      @include widthAndHeight(778px, 658px);
+      text-align: center;
+    }
+  
+    &-articles {
+      @include widthAndHeight($height: 590px);
+      font-size: 0;
+    }
+  }
+  
+  .side-bar {
+    @include widthAndHeight(312px, 733.35px);
+    margin-left: 36px;
+  
+    &__title {
+      font-weight: bold;
+      font-size: 1.8rem;
+      color: $main-text-color;
+      padding-bottom: 43px;
+    }
+  
+    &__keywords {
+      @include widthAndHeight(309px, 73px);
+      border-bottom: 1px solid $main-border;
+    }
+  
+    &__keyword {
+      display: inline-block;
+      background: $keyword-color;
+      @include kadomaru(11px);
+      font-size: 1.2rem;
+      line-height: 180%;
+      color: $main-text-color;
+      text-align: center;
+      @include boxBase(0 9px 10px 0, 0 8px);
+  
+      &:nth-last-child(1) {
+        background-color: $white;
+        border: 1px solid $keyword-color;
+      }
+    }
+  }
