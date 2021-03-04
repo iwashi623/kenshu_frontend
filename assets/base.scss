@@ -14,8 +14,8 @@ html {
 // extendファイルの読み込み
 @import "modules/_extend";
 
-@import "parts/_header";
-@import "parts/_category-header";
-@import "parts/_ranking";
-@import "parts/_main";
-@import "parts/_footer";
+@import "parts/_parts_header";
+@import "parts/_parts_category-header";
+@import "parts/_parts_ranking";
+@import "parts/_parts_main";
+@import "parts/_parts_footer";

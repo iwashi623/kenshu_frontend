@@ -6,12 +6,12 @@
     display: flex;
     align-items: center;
   
-    &-box-list {
+    &__box-list {
       @include widthAndHeight(1126px, 100%);
       display: flex;
     }
   
-    &-article {
+    &__article {
       @include widthAndHeight($width: 181px);
       margin: 22px 8px 22px 0;
       background-color: $white;
@@ -20,17 +20,17 @@
         margin-right: 0px;
       }
   
-      &__img {
+      &-img {
         height: 100px;
         position: relative;
       }
   
-      &__content {
+      &-content {
         padding: 9px 10px;
         @include widthAndHeight($width: 181px);
       }
   
-      &__heading {
+      &-heading {
         font-weight: normal;
         font-size: 1.3rem;
         line-height: 1.4;
@@ -38,13 +38,13 @@
         @include widthAndHeight($height: 57.6px);
       }
   
-      &__subtext {
+      &-subtext {
         line-height: 1;
         vertical-align: middle;
       }
     }
   
-    &-rank-area {
+    &__rank-area {
       @include widthAndHeight(24px, 24px);
       position: absolute;
       top: 0;
@@ -54,7 +54,7 @@
       display: flex;
       align-items: center;
   
-      &__text {
+      &-text {
         font-family: Roboto;
         font-style: italic;
         font-weight: bold;
@@ -65,11 +65,11 @@
       }
     }
   
-    &-time-area {
+    &__time-area {
       @include widthAndHeight(52px, 15px);
       display: flex;
   
-      &__card {
+      &-card {
         @include widthAndHeight(15px, 100%);
         background-image: url("../img/icon.png");
         background-position: center;
@@ -78,7 +78,7 @@
         flex: none;
       }
   
-      &__releasedTime {
+      &-releasedTime {
         font-size: 1.2rem;
         color: $article-text;
         flex: none;
@@ -86,13 +86,13 @@
       }
     }
   
-    &-company-area {
+    &__company-area {
       font-size: 1.3rem;
       color: $article-text;
       padding-top: 2px;
     }
   
-    &-pv-count {
+    &__pv-count {
       font-size: 1.2rem;
       color: $article-text;
       line-height: 1.5;
