@@ -1,100 +1,100 @@
 /* .ranking */
 .ranking {
-    @include widthAndHeight($height: 263px);
-    background: $rainking-background;
+  @include widthAndHeight($height: 263px);
+  background: $rainking-background;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  &__box-list {
+    @include widthAndHeight(1126px, 100%);
+    display: flex;
+  }
+
+  &__article {
+    @include widthAndHeight($width: 181px);
+    margin: 22px 8px 22px 0;
+    background-color: $white;
+
+    &:nth-last-child(1) {
+      margin-right: 0px;
+    }
+  }
+
+  &__article-img {
+    height: 100px;
+    position: relative;
+  }
+
+  &__article-content {
+    padding: 9px 10px;
+    @include widthAndHeight($width: 181px);
+  }
+
+  &__article-heading {
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: $main-text-color;
+    @include widthAndHeight($height: 57.6px);
+  }
+
+  &__article-subtext {
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  &__rank-area {
+    @include widthAndHeight(24px, 24px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $rankarea;
     justify-content: center;
     display: flex;
     align-items: center;
-  
-    &__box-list {
-      @include widthAndHeight(1126px, 100%);
-      display: flex;
-    }
-  
-    &__article {
-      @include widthAndHeight($width: 181px);
-      margin: 22px 8px 22px 0;
-      background-color: $white;
-  
-      &:nth-last-child(1) {
-        margin-right: 0px;
-      }
-  
-      &-img {
-        height: 100px;
-        position: relative;
-      }
-  
-      &-content {
-        padding: 9px 10px;
-        @include widthAndHeight($width: 181px);
-      }
-  
-      &-heading {
-        font-weight: normal;
-        font-size: 1.3rem;
-        line-height: 1.4;
-        color: $main-text-color;
-        @include widthAndHeight($height: 57.6px);
-      }
-  
-      &-subtext {
-        line-height: 1;
-        vertical-align: middle;
-      }
-    }
-  
-    &__rank-area {
-      @include widthAndHeight(24px, 24px);
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: $rankarea;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-  
-      &-text {
-        font-family: Roboto;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 1.7rem;
-        line-height: 1;
-        margin-left: -3px;
-        color: $white;
-      }
-    }
-  
-    &__time-area {
-      @include widthAndHeight(52px, 15px);
-      display: flex;
-  
-      &-card {
-        @include widthAndHeight(15px, 100%);
-        background-image: url("../img/icon.png");
-        background-position: center;
-        background-size: cover;
-        margin-right: 5px;
-        flex: none;
-      }
-  
-      &-releasedTime {
-        font-size: 1.2rem;
-        color: $article-text;
-        flex: none;
-        padding-top: 2px;
-      }
-    }
-  
-    &__company-area {
-      font-size: 1.3rem;
-      color: $article-text;
-      padding-top: 2px;
-    }
-  
-    &__pv-count {
-      font-size: 1.2rem;
-      color: $article-text;
-      line-height: 1.5;
-    }
   }
+
+  &__rank-area-text {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 1;
+    margin-left: -3px;
+    color: $white;
+  }
+
+  &__time-area {
+    @include widthAndHeight(52px, 15px);
+    display: flex;
+  }
+
+  &__time-area-card {
+    @include widthAndHeight(15px, 100%);
+    background-image: url("../img/icon.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: 5px;
+    flex: none;
+  }
+
+  &__time-area-releasedTime {
+    font-size: 1.2rem;
+    color: $article-text;
+    flex: none;
+    padding-top: 2px;
+  }
+
+  &__company-area {
+    font-size: 1.3rem;
+    color: $article-text;
+    padding-top: 2px;
+  }
+
+  &__pv-count {
+    font-size: 1.2rem;
+    color: $article-text;
+    line-height: 1.5;
+  }
+}
