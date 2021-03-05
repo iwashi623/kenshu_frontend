@@ -708,7 +708,7 @@ template {
 .ranking__time-area-card {
   width: 15px;
   height: 100%;
-  background-image: url("../../img/icon.png");
+  background-image: url("../img/icon.png");
   background-position: center;
   background-size: cover;
   margin-right: 5px;
