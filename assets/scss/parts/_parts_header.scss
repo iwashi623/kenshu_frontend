@@ -1,0 +1,114 @@
+/* header */
+.header {
+  @include widthAndHeight($height: 75px);
+  background: $header-background;
+
+  &__container {
+    @include widthAndHeight(1126px, 75px);
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__small-container {
+    display: flex;
+    position: absolute;
+    top: 13px;
+  }
+
+  &__logo {
+    @include widthAndHeight($width: 485px);
+    display: flex;
+  }
+
+  &__logo-image {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-text {
+    margin-left: 18px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: $header-logo-text;
+  }
+
+  &__release {
+    @include widthAndHeight(316px, 30px);
+    margin-left: 26px;
+    background: $header-release;
+    @include kadomaru(4px);
+  }
+
+  &__release-list {
+    display: flex;
+    align-items: center;
+    @include widthAndHeight($height: 100%);
+    justify-content: center;
+  }
+
+  &__release-list-item {
+    > a {
+      font-size: 1.3rem;
+      color: $white;
+    }
+  }
+
+  &__keyword {
+    @include widthAndHeight(288px, 30px);
+    margin-left: 11px;
+    display: flex;
+  }
+
+  &__keyword-text {
+    @include widthAndHeight(258px, 30px);
+    @include kadomaru(4px 0 0 4px);
+    background-color: $white;
+
+    &::placeholder {
+      padding: 2px 15px;
+      @include widthAndHeight(228px, 25px);
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      color: $keyword-textarea;
+    }
+  }
+
+  &__keyword-button {
+    @include widthAndHeight(30px, 30px);
+    background: $button-color;
+    @include kadomaru(0 4px 4px 0);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  &-line {
+    @include boxBase(0 10px 0 0, 0 10px 0 0);
+    border-right: 1px solid $line-color;
+  }
+}
+
+.main-header {
+  position: absolute;
+  top: 52px;
+  @include widthAndHeight($height: 15px);
+
+  &__list {
+    @include widthAndHeight($height: 100%);
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item > a {
+    font-size: 1.3rem;
+    color: $main-header-item;
+  }
+
+  &__list-item:nth-child(1) > a {
+    margin-left: -1px;
+    font-weight: bold;
+    color: $white;
+  }
+}

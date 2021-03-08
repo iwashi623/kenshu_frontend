@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+// reset CSSの読み込み
+@import "modules/_destyle";
+
+// 変数ファイルの読み込み
+@import "modules/_var";
+
+// mixinファイルの読み込み
+@import "modules/_mixin";
+
+// extendファイルの読み込み
+@import "modules/_extend";
+
+@import "parts/_parts_header";
+@import "parts/_parts_category-header";
+@import "parts/_parts_ranking";
+@import "parts/_parts_main";
+@import "parts/_parts_footer";

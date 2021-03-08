@@ -4,54 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
     <title>kenshu-forntend</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-container">
-        <div class="header-small-container">
-          <div class="header-logo">
-            <div class="header-logo__image">
+      <div class="header__container">
+        <div class="header__small-container">
+          <div class="header__logo">
+            <div class="header__logo-image">
               <a href="#">
-                <img src="img/logo.png" alt="PRTIMESのロゴ" />
+                <img src="assets/img/logo.png" alt="PRTIMESのロゴ" />
               </a>
             </div>
-            <p class="header-logo__text">
+            <p class="header__logo-text">
               プレスリリース・ニュースリリース配信サービスのPR TIMES
             </p>
           </div>
-          <div class="header-release">
-            <ul class="release-list">
-              <li class="release-list__item">
-                <a href="#" class="line">プレスリリースを受信</a>
+          <div class="header__release">
+            <ul class="header__release-list">
+              <li class="header__release-list-item">
+                <a href="#" class="header-line">プレスリリースを受信</a>
               </li>
-              <li class="release-list__item">
-                <a href="#" class="line">配信を依頼</a>
+              <li class="header__release-list-item">
+                <a href="#" class="header-line">配信を依頼</a>
               </li>
-              <li class="release-list__item">
+              <li class="header__release-list-item">
                 <a href="#">ログイン</a>
               </li>
             </ul>
           </div>
-          <div class="header-keyword">
+          <div class="header__keyword">
             <input
               type="text"
-              class="header-keyword__text"
+              class="header__keyword-text"
               placeholder="キーワードで検索"
             />
-            <button><img src="img/search.png" alt="検索ロゴ" /></button>
+            <button class="header__keyword-button">
+              <img src="assets/img/search.png" alt="検索ロゴ" />
+            </button>
           </div>
         </div>
         <div class="main-header">
-          <ul class="main-header-list">
-            <li class="main-header-list__item">
-              <a href="#" class="line">プレスリリース</a>
+          <ul class="main-header__list">
+            <li class="main-header__list-item">
+              <a href="#" class="header-line">プレスリリース</a>
             </li>
-            <li class="main-header-list__item">
-              <a href="#" class="line">ランキング</a>
+            <li class="main-header__list-item">
+              <a href="#" class="header-line">ランキング</a>
             </li>
-            <li class="main-header-list__item">
+            <li class="main-header__list-item">
               <a href="#">TV</a>
             </li>
           </ul>
@@ -98,152 +100,152 @@
     </nav>
 
     <div class="ranking">
-      <div class="ranking-box-list">
-        <article class="ranking-article">
+      <div class="ranking__box-list">
+        <article class="ranking__article">
           <a href="#">
-            <div class="ranking-article__img">
-              <img src="img/article1.png" alt="box1-img" />
-              <div class="rank-area">
-                <span class="rank-area__text">1</span>
+            <div class="ranking__article-img">
+              <img src="assets/img/article1.png" alt="box1-img" />
+              <div class="ranking__rank-area">
+                <span class="ranking__rank-area-text">1</span>
               </div>
             </div>
 
-            <div class="ranking-article__content">
-              <h3 class="ranking-article__heading">
+            <div class="ranking__article-content">
+              <h3 class="ranking__article-heading">
                 【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
               </h3>
-              <div class="ranking-article__subtext">
-                <div class="time-area claerfix">
-                  <div class="time-area__card"></div>
-                  <p class="time-area__releasedTime">2時間前</p>
+              <div class="ranking__article-subtext">
+                <div class="ranking__time-area">
+                  <div class="ranking__time-area-card"></div>
+                  <p class="ranking__time-area-releasedTime">2時間前</p>
                 </div>
-                <div class="company-area">いちから株式会社</div>
-                <div class="pv-count">PV 00,000 / UU 00,000</div>
+                <div class="ranking__company-area">いちから株式会社</div>
+                <div class="ranking__pv-count">PV 00,000 / UU 00,000</div>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="ranking-article">
+        <article class="ranking__article">
           <a href="#">
-            <div class="ranking-article__img">
-              <img src="img/article2.png" alt="box2-img" />
-              <div class="rank-area">
-                <span class="rank-area__text">2</span>
+            <div class="ranking__article-img">
+              <img src="assets/img/article2.png" alt="box2-img" />
+              <div class="ranking__rank-area">
+                <span class="ranking__rank-area-text">2</span>
               </div>
             </div>
 
-            <div class="ranking-article__content">
-              <h3 class="ranking-article__heading">
+            <div class="ranking__article-content">
+              <h3 class="ranking__article-heading">
                 従業員に国内最大級の「危険手当」を支給
               </h3>
-              <div class="ranking-article__subtext">
-                <div class="time-area">
-                  <div class="time-area__card"></div>
-                  <p class="time-area__releasedTime">1時間前</p>
+              <div class="ranking__article-subtext">
+                <div class="ranking__time-area">
+                  <div class="ranking__time-area-card"></div>
+                  <p class="ranking__time-area-releasedTime">1時間前</p>
                 </div>
-                <div class="company-area">株式会社SHIFT</div>
-                <div class="pv-count">PV 00,000 / UU 00,000</div>
+                <div class="ranking__company-area">株式会社SHIFT</div>
+                <div class="ranking__pv-count">PV 00,000 / UU 00,000</div>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="ranking-article">
+        <article class="ranking__article">
           <a href="#">
-            <div class="ranking-article__img">
-              <img src="img/article3.png" alt="box3-img" />
-              <div class="rank-area">
-                <span class="rank-area__text">3</span>
+            <div class="ranking__article-img">
+              <img src="assets/img/article3.png" alt="box3-img" />
+              <div class="ranking__rank-area">
+                <span class="ranking__rank-area-text">3</span>
               </div>
             </div>
 
-            <div class="ranking-article__content">
-              <h3 class="ranking-article__heading">
+            <div class="ranking__article-content">
+              <h3 class="ranking__article-heading">
                 【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...
               </h3>
-              <div class="ranking-article__subtext">
-                <div class="time-area">
-                  <div class="time-area__card"></div>
-                  <p class="time-area__releasedTime">2時間前</p>
+              <div class="ranking__article-subtext">
+                <div class="ranking__time-area">
+                  <div class="ranking__time-area-card"></div>
+                  <p class="ranking__time-area-releasedTime">2時間前</p>
                 </div>
-                <div class="company-area">いちから株式会社</div>
-                <div class="pv-count">PV 00,000 / UU 00,000</div>
+                <div class="ranking__company-area">いちから株式会社</div>
+                <div class="ranking__pv-count">PV 00,000 / UU 00,000</div>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="ranking-article">
+        <article class="ranking__article">
           <a href="#">
-            <div class="ranking-article__img">
-              <img src="img/article4.png" alt="box4-img" />
-              <div class="rank-area">
-                <span class="rank-area__text">4</span>
+            <div class="ranking__article-img">
+              <img src="assets/img/article4.png" alt="box4-img" />
+              <div class="ranking__rank-area">
+                <span class="ranking__rank-area-text">4</span>
               </div>
             </div>
 
-            <div class="ranking-article__content">
-              <h3 class="ranking-article__heading">
+            <div class="ranking__article-content">
+              <h3 class="ranking__article-heading">
                 【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...
               </h3>
-              <div class="ranking-article__subtext">
-                <div class="time-area">
-                  <div class="time-area__card"></div>
-                  <p class="time-area__releasedTime">200年3月10</p>
+              <div class="ranking__article-subtext">
+                <div class="ranking__time-area">
+                  <div class="ranking__time-area-card"></div>
+                  <p class="ranking__time-area-releasedTime">200年3月10</p>
                 </div>
-                <div class="company-area">いちから株式会社</div>
-                <div class="pv-count">PV 00,000 / UU 00,000</div>
+                <div class="ranking__company-area">いちから株式会社</div>
+                <div class="ranking__pv-count">PV 00,000 / UU 00,000</div>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="ranking-article">
+        <article class="ranking__article">
           <a href="#">
-            <div class="ranking-article__img">
-              <img src="img/article5.png" alt="box5-img" />
-              <div class="rank-area">
-                <span class="rank-area__text">5</span>
+            <div class="ranking__article-img">
+              <img src="assets/img/article5.png" alt="box5-img" />
+              <div class="ranking__rank-area">
+                <span class="ranking__rank-area-text">5</span>
               </div>
             </div>
 
-            <div class="ranking-article__content">
-              <h3 class="ranking-article__heading">
+            <div class="ranking__article-content">
+              <h3 class="ranking__article-heading">
                 ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝
               </h3>
-              <div class="ranking-article__subtext">
-                <div class="time-area">
-                  <div class="time-area__card"></div>
-                  <p class="time-area__releasedTime">2時間前</p>
+              <div class="ranking__article-subtext">
+                <div class="ranking__time-area">
+                  <div class="ranking__time-area-card"></div>
+                  <p class="ranking__time-area-releasedTime">2時間前</p>
                 </div>
-                <div class="company-area">いちから株式会社</div>
-                <div class="pv-count">PV 00,000 / UU 00,000</div>
+                <div class="ranking__company-area">いちから株式会社</div>
+                <div class="ranking__pv-count">PV 00,000 / UU 00,000</div>
               </div>
             </div>
           </a>
         </article>
 
-        <article class="ranking-article">
+        <article class="ranking__article">
           <a href="#">
-            <div class="ranking-article__img">
-              <img src="img/article6.png" alt="box6-img" />
-              <div class="rank-area">
-                <span class="rank-area__text">6</span>
+            <div class="ranking__article-img">
+              <img src="assets/img/article6.png" alt="box6-img" />
+              <div class="ranking__rank-area">
+                <span class="ranking__rank-area-text">6</span>
               </div>
             </div>
 
-            <div class="ranking-article__content">
-              <h3 class="ranking-article__heading">
+            <div class="ranking__article-content">
+              <h3 class="ranking__article-heading">
                 東京証券取引所市場第一部へのお知らせ
               </h3>
-              <div class="ranking-article__subtext">
-                <div class="time-area">
-                  <div class="time-area__card"></div>
-                  <p class="time-area__releasedTime">2時間前</p>
+              <div class="ranking__article-subtext">
+                <div class="ranking__time-area">
+                  <div class="ranking__time-area-card"></div>
+                  <p class="ranking__time-area-releasedTime">2時間前</p>
                 </div>
-                <div class="company-area">いちから株式会社</div>
-                <div class="pv-count">PV 00,000 / UU 00,000</div>
+                <div class="ranking__company-area">いちから株式会社</div>
+                <div class="ranking__pv-count">PV 00,000 / UU 00,000</div>
               </div>
             </div>
           </a>
@@ -252,21 +254,25 @@
     </div>
 
     <div class="wrapper">
-      <main id="main">
-        <div class="title">新着プレスリリース</div>
-        <div class="contents">
-          <div class="articles">
+      <main class="main">
+        <div class="main__title">新着プレスリリース</div>
+        <div class="main__contents">
+          <div class="main__articles">
             <article class="main-article">
               <div class="main-article__heading">
                 <a href="#" class="main-article__title">
                   BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019
                   JAPAN」に登壇！マイボトル化推進...
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -280,11 +286,15 @@
                 <a href="#" class="main-article__title">
                   近くの飲食店を社食として利用できる【どこでも社食】が「東京純豆腐」と提携
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -298,11 +308,15 @@
                 <a href="#" class="main-article__title">
                   創業10年で10件の特許を取得！
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -316,11 +330,15 @@
                 <a href="#" class="main-article__title">
                   チャット型検索エンジン『CHAT EXTENSION』を提供開始
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -334,11 +352,15 @@
                 <a href="#" class="main-article__title">
                   AWAが月額480円の新プラン「学生プラン」をスタート
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -353,11 +375,15 @@
                   ブシロード公認カードゲーム専門店支援施策
                   3月度還元額を公認店様へご案内！
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -372,11 +398,15 @@
                   TikTokで話題の楽曲「HOT
                   SONG」3月度版プレイリストを「AWA」で公開
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -390,11 +420,15 @@
                 <a href="#" class="main-article__title">
                   NHK　Eテレ「おかあさんといっしょ」で子どもたちに人気の体操「からだ☆ダンダン」のＴシャツが発売決..
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -408,11 +442,15 @@
                 <a href="#" class="main-article__title">
                   4月13日以降の串カツ田中店舗営業に関して
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -426,11 +464,15 @@
                 <a href="#" class="main-article__title">
                   カフェのサブスク「CAFE PASS」がLINEログインに対応。
                 </a>
-                <img src="img/sushi.png" alt="sushi-img" class="main-article__img" />
+                <img
+                  src="assets/img/sushi.png"
+                  alt="sushi-img"
+                  class="main-article__img"
+                />
               </div>
               <div class="main-article__subarea">
                 <img
-                  src="img/icon.png"
+                  src="assets/img/icon.png"
                   alt="timeicon-img"
                   class="main-article__timeimage"
                 />
@@ -439,7 +481,7 @@
               </div>
             </article>
           </div>
-          <button>もっと見る</button>
+          <button class="main__button">もっと見る</button>
         </div>
       </main>
 
@@ -459,8 +501,8 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer-contents">
-          <div class="footer-contents__lists">
+        <div class="footer__contents">
+          <div class="footer__contents-lists">
             <div class="footer-list">
               <h4 class="footer-list__title">ニュースリリース配信サービス</h4>
               <ul>
